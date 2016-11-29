@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7560A902-2075-4D1D-9D88-D95604A36ACD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CIT280_EatFit_v2.My.MyApplication</StartupObject>
+    <RootNamespace>CIT280_EatFit_v2</RootNamespace>
+    <AssemblyName>CIT280_EatFit-v2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CIT280_EatFit-v2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CIT280_EatFit-v2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvOpt.designer.vb">
+      <DependentUpon>AdvOpt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdvOpt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseMenu.designer.vb">
+      <DependentUpon>BaseMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicInfo.designer.vb">
+      <DependentUpon>BasicInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BasicInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Breakfast.designer.vb">
+      <DependentUpon>Breakfast.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Breakfast.vb" />
+    <Compile Include="Dinner.designer.vb">
+      <DependentUpon>Dinner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dinner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Exercises.vb" />
+    <Compile Include="Modules\Globalvariables.vb" />
+    <Compile Include="Heavy.designer.vb">
+      <DependentUpon>Heavy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Heavy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Light.designer.vb">
+      <DependentUpon>Light.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Light.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lunch.designer.vb">
+      <DependentUpon>Lunch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lunch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Meals.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Snack.designer.vb">
+      <DependentUpon>Snack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Snack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdvOpt.resx">
+      <DependentUpon>AdvOpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseMenu.resx">
+      <DependentUpon>BaseMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicInfo.resx">
+      <DependentUpon>BasicInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Breakfast.resx">
+      <DependentUpon>Breakfast.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinner.resx">
+      <DependentUpon>Dinner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Heavy.resx">
+      <DependentUpon>Heavy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Light.resx">
+      <DependentUpon>Light.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lunch.resx">
+      <DependentUpon>Lunch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Snack.resx">
+      <DependentUpon>Snack.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="bin\Debug\Meals\apple.jpg" />
+    <Content Include="Media\apple.jpg" />
+    <Content Include="Media\eatfitlogo.png" />
+    <Content Include="Media\purple-abstract-background.png" />
+    <Content Include="Media\teal-abstract-background.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
