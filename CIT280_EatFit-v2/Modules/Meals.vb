@@ -239,35 +239,35 @@ End Sub
 'protein load methods
 Public Sub loadbeef()
     Proteinbox = System.Drawing.Bitmap.FromFile(My.Application.Info.DirectoryPath & "\Meals" & "\beef.jpg")
-    Proteintext = "beef"
+    Proteintext = "Beef"
 End Sub
 Public Sub loadchicken()
     Proteinbox = System.Drawing.Bitmap.FromFile(My.Application.Info.DirectoryPath & "\Meals" & "\chicken.jpg")
-    Proteintext = "chicken"
+    Proteintext = "Chicken"
 End Sub
 Public Sub loadpork()
     Proteinbox = System.Drawing.Bitmap.FromFile(My.Application.Info.DirectoryPath & "\Meals" & "\pork.jpg")
-    Proteintext = "pork"
+    Proteintext = "Pork"
 End Sub
 Public Sub loadfish()
     Proteinbox = System.Drawing.Bitmap.FromFile(My.Application.Info.DirectoryPath & "\Meals" & "\fish.jpg")
-    Proteintext = "fish"
+    Proteintext = "Fish"
 End Sub
 Public Sub loadtofu()
     Proteinbox = System.Drawing.Bitmap.FromFile(My.Application.Info.DirectoryPath & "\Meals" & "\tofu.jpg")
-    Proteintext = "tofu"
+    Proteintext = "Tofu"
 End Sub
 Public Sub loadnuts()
     Proteinbox = System.Drawing.Bitmap.FromFile(My.Application.Info.DirectoryPath & "\Meals" & "\nuts.jpg")
-    Proteintext = "nuts"
+    Proteintext = "Nuts"
 End Sub
 Public Sub loadeggs()
     Proteinbox = System.Drawing.Bitmap.FromFile(My.Application.Info.DirectoryPath & "\Meals" & "\eggs.jpg")
-    Proteintext = "eggs"
+    Proteintext = "Eggs"
 End Sub
 Public Sub loadsoy()
     Proteinbox = System.Drawing.Bitmap.FromFile(My.Application.Info.DirectoryPath & "\Meals" & "\soy.jpg")
-    Proteintext = "soy"
+    Proteintext = "Soy"
 End Sub
 'selection methods
 Public Sub selectgrain()
@@ -338,7 +338,7 @@ End Sub
 'selection methods
 Public Sub selectdrink()
     Randomize()
-    Dim drinkchoice As Integer = Math.Ceiling(Rnd() * 8)
+    Dim drinkchoice As Integer = Math.Ceiling(Rnd() * 5)
     Select Case True
         Case drinkchoice = 1
             loadmilk()

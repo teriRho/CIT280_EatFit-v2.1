@@ -1,6 +1,10 @@
 ﻿Public Class frmSnack
     Private Sub frmSnack_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         selectfruit()
+        selectvegetable()
+        selectprotein()
+        selectgrain()
+        selectdrink()
         linkobjects()
     End Sub
     Private Sub linkobjects()
